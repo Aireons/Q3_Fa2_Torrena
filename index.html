@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date=new Date();
+        var num=Math.floor(Math.random()*1000);
+        var ones=num%10;
+        var tens1=num%100;
+        var tens2=tens1-ones;
+        var hundreds=num-tens1;
+        document.write("Randomly generated number: "+num+"<\p>");
+        document.write("Breakdown: "+hundreds+","+tens2+","+ones+"<\p>");
+        document.write("Date today: "+date)
+    </script>
+</body>
+</html>
